@@ -1,10 +1,10 @@
 {
-  "name": "websocket-tic-tac-toe",
+  "name": "spectador-servicio",
   "version": "1.0.0",
-  "description": "Multiplayer Tic Tac Toe game created using WebSockets.",
-  "main": "src/server.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "node src/server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",

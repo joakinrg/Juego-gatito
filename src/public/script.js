@@ -1,5 +1,6 @@
 $(document).ready(function() {
     let socket = io();
+    let spectatorSocket = io('http://localhost:3001');
     let preventOpponentLeftAlert = false;
     let preventRedirectToMainMenu = false;
 
@@ -28,7 +29,7 @@ $(document).ready(function() {
         socket.emit('spectate');
     });
 
-    socket.on('availableRooms', function(data) {
+    spectatorSocket.on('availableRooms', function(data) {
         var roomList = $('#spectateRooms');
         roomList.empty();
 
